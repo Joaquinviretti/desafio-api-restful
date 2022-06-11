@@ -50,9 +50,7 @@ router.get('/', (req, res) => {
 
 //GET params
 router.get('/:id', validarId, (req, res) => {
-    let {
-        id
-    } = req.params;
+    let { id } = req.params;
     res.json(api.getById(id));
 })
 
